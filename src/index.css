@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Palette as RGB triplets so Tailwind opacity modifiers (bg-canvas/85) work */
+  :root {
+    --brand-50: 236 254 255;
+    --brand-100: 207 250 254;
+    --brand-200: 165 243 252;
+    --brand-300: 103 232 249;
+    --brand-500: 8 145 178;
+    --brand-600: 14 116 144;
+    --brand-700: 21 94 117;
+    --brand-800: 22 78 99;
+    --brand-900: 18 58 71;
+
+    --sage-50: 244 246 241;
+    --sage-100: 232 237 228;
+    --sage-200: 211 221 203;
+    --sage-300: 181 196 169;
+    --sage-500: 124 143 111;
+    --sage-700: 79 94 69;
+
+    --red-50: 254 242 242;
+    --red-100: 254 226 226;
+    --red-200: 254 202 202;
+    --red-600: 220 38 38;
+    --red-700: 185 28 28;
+    --red-800: 153 27 27;
+
+    --canvas: 245 245 240;
+    --surface: 255 255 255;
+    --ink: 15 23 42;
+    --ink-muted: 71 85 105;
+    --ink-subtle: 100 116 139;
+    --line: 228 226 218;
+
+    /* Mood chart bar: validated with the dataviz palette checker against the card surface */
+    --chart-mood: 8 145 178;
+
+    color-scheme: light;
+  }
+
+  /* Dark theme: tints become deep surfaces and text shades become light, so
+     "brand-50 background + brand-700 text" pairs stay readable in both themes */
+  .dark {
+    --brand-50: 12 40 48;
+    --brand-100: 16 56 66;
+    --brand-200: 21 94 117;
+    --brand-300: 103 232 249;
+    --brand-500: 34 184 214;
+    --brand-600: 14 116 144;
+    --brand-700: 125 220 236;
+    --brand-800: 165 243 252;
+    --brand-900: 207 250 254;
+
+    --sage-50: 26 33 28;
+    --sage-100: 35 44 37;
+    --sage-200: 51 64 47;
+    --sage-300: 79 94 69;
+    --sage-500: 157 176 143;
+    --sage-700: 199 211 189;
+
+    --red-50: 45 18 18;
+    --red-100: 63 22 22;
+    --red-200: 90 30 30;
+    --red-600: 220 38 38;
+    --red-700: 248 113 113;
+    --red-800: 252 165 165;
+
+    --canvas: 14 19 17;
+    --surface: 22 29 26;
+    --ink: 231 234 229;
+    --ink-muted: 163 173 166;
+    --ink-subtle: 128 140 133;
+    --line: 40 50 45;
+
+    --chart-mood: 19 159 192;
+
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-canvas text-ink font-sans antialiased;
+    font-feature-settings: 'lnum' 1; /* Raleway: lining numbers read better in UI */
+  }
+
+  h1, h2, h3 {
+    @apply font-heading text-ink;
+  }
+
+  /* Visible keyboard focus everywhere */
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-600 ring-offset-2 ring-offset-canvas;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  /* Subtle entrance: small offset, short duration (design dial motion 3/10) */
+  .animate-fade-up {
+    animation: fade-up 400ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 min-h-[44px] text-sm font-semibold transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Fixed colours (not theme variables) so white text keeps 4.5:1 contrast in both themes */
+  .btn-primary {
+    @apply btn bg-[#0E7490] text-white hover:bg-[#155E75];
+  }
+
+  .btn-secondary {
+    @apply btn bg-surface text-ink border border-line hover:bg-sage-50;
+  }
+
+  .btn-ghost {
+    @apply btn text-ink-muted hover:text-ink hover:bg-sage-100;
+  }
+
+  .btn-danger {
+    @apply btn bg-red-600 text-white hover:bg-red-700;
+  }
+
+  .card {
+    @apply bg-surface rounded-2xl border border-line shadow-soft;
+  }
+
+  .field-label {
+    @apply block text-sm font-medium text-ink mb-1.5;
+  }
+
+  .field-input {
+    @apply w-full rounded-xl border border-line bg-surface px-4 min-h-[44px] text-ink placeholder:text-ink-subtle transition-colors duration-200 focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-100;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.14em] text-brand-700;
+  }
+
+  .page-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
