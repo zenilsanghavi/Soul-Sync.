@@ -14,7 +14,7 @@ export const PrivacyPolicyPage: React.FC = () => {
             <h1 className="text-4xl font-semibold text-ink">Privacy Policy</h1>
           </div>
           <p className="text-lg text-ink-muted max-w-2xl mx-auto">
-            This policy explains what Wellness Companion collects, why, where it's stored and how you can remove it.
+            This policy explains what Soul Sync collects, why, where it's stored and how you can remove it.
           </p>
           <p className="text-sm text-ink-subtle mt-4">Last updated: October 22, 2026</p>
         </div>

@@ -6,7 +6,7 @@
 
 ---
 
-**Project:** Wellness Companion
+**Project:** Soul Sync
 **Generated:** 2026-10-22 04:24:42
 **Category:** Yoga & Stretching Guide
 **Design Dials:** Variance 3/10 (Centered / Minimal) | Motion 3/10 (Subtle) | Density 4/10 (Standard)

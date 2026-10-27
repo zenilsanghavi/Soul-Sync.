@@ -29,7 +29,7 @@ export const SettingsPage: React.FC = () => {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = `wellness-companion-data-${new Date().toISOString().split('T')[0]}.json`;
+    link.download = `soul-sync-data-${new Date().toISOString().split('T')[0]}.json`;
     link.click();
     URL.revokeObjectURL(url);
     setStatus({ type: 'success', text: 'Your data has been downloaded.' });

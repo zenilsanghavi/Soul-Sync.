@@ -17,7 +17,7 @@ export const TermsOfServicePage: React.FC = () => {
             <h1 className="text-4xl font-semibold text-ink">Terms of Service</h1>
           </div>
           <p className="text-lg text-ink-muted max-w-2xl mx-auto">
-            These terms cover your use of Wellness Companion.
+            These terms cover your use of Soul Sync.
           </p>
           <p className="text-sm text-ink-subtle mt-4">Last updated: October 22, 2026</p>
         </div>
@@ -29,7 +29,7 @@ export const TermsOfServicePage: React.FC = () => {
             <div>
               <h3 className="font-semibold text-red-900 mb-2">Not Medical Care or an Emergency Service</h3>
               <p className="text-red-800 mb-3">
-                Wellness Companion is an AI chat companion. It is not therapy, counselling or medical advice and is not
+                Soul Sync is an AI chat companion. It is not therapy, counselling or medical advice and is not
                 a substitute for professional care. If you are in crisis or in danger, contact emergency services or a
                 helpline right away ({crisis.region}):
               </p>
@@ -50,11 +50,11 @@ export const TermsOfServicePage: React.FC = () => {
             <section className="mb-8">
               <div className="flex items-center space-x-3 mb-4">
                 <CheckCircle className="h-6 w-6 text-sage-500" />
-                <h2 className="text-2xl font-semibold text-ink">Using Wellness Companion</h2>
+                <h2 className="text-2xl font-semibold text-ink">Using Soul Sync</h2>
               </div>
 
               <p className="text-ink-muted">
-                By creating an account or using Wellness Companion, you agree to these terms and our{' '}
+                By creating an account or using Soul Sync, you agree to these terms and our{' '}
                 <Link to="/privacy" className="text-brand-600">Privacy Policy</Link>. If you don't agree, please
                 don't use the service. The service is free to use.
               </p>
@@ -99,7 +99,7 @@ export const TermsOfServicePage: React.FC = () => {
 
               <ul className="text-ink-muted space-y-2">
                 <li>• The service is provided "as is", without guarantees that it will always be available or error-free</li>
-                <li>• Wellness Companion can't diagnose, treat or cure any medical or mental health condition</li>
+                <li>• Soul Sync can't diagnose, treat or cure any medical or mental health condition</li>
                 <li>• To the extent the law allows, we aren't responsible for decisions you make based on the AI's replies</li>
               </ul>
             </section>

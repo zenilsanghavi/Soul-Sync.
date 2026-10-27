@@ -323,7 +323,7 @@ export const DashboardPage: React.FC = () => {
               <Leaf className="h-5 w-5 text-brand-600" aria-hidden="true" />
             </span>
             <div className="min-w-0 flex-1">
-              <h1 className="font-heading text-base font-semibold text-ink">Wellness Companion</h1>
+              <h1 className="font-heading text-base font-semibold text-ink">Soul Sync</h1>
               <p className="flex items-center gap-1.5 truncate text-xs text-ink-muted">
                 <span className={`h-2 w-2 shrink-0 rounded-full ${aiMode === 'basic' ? 'bg-amber-500' : 'bg-sage-500'}`} aria-hidden="true" />
                 {aiMode === 'basic' ? 'Basic mode: local AI is offline' : 'An AI companion, not a therapist'}
@@ -355,7 +355,7 @@ export const DashboardPage: React.FC = () => {
               {chatHistory.map(msg => {
                 if (msg.streaming && !msg.message) {
                   return (
-                    <div key={msg.id} className="flex items-start" aria-label="Wellness Companion is typing">
+                    <div key={msg.id} className="flex items-start" aria-label="Soul Sync is typing">
                       <div className="flex items-center gap-1 rounded-2xl rounded-bl-md bg-sage-50 px-4 py-4">
                         {[0, 150, 300].map(delay => (
                           <span key={delay} className="h-2 w-2 animate-bounce rounded-full bg-sage-300" style={{ animationDelay: `${delay}ms` }} />

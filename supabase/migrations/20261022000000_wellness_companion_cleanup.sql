@@ -1,5 +1,5 @@
 /*
-  # Wellness Companion cleanup
+  # Soul Sync cleanup
 
   1. Removes features that no longer exist in the app
     - Payments and trials: plan / subscription / billing columns on profiles

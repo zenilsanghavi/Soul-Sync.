@@ -1,4 +1,4 @@
-// Built-in replies for Wellness Companion, used when the local LLM (Ollama) is unavailable
+// Built-in replies for Soul Sync, used when the local LLM (Ollama) is unavailable
 
 import { detectCrisis, getCrisisResources, crisisMessage } from './crisis';
 

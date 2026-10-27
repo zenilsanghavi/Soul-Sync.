@@ -1,8 +1,8 @@
-# Wellness Companion
+# Soul Sync
 
 An AI chat companion for everyday stress, worries and low days. Users can talk things through, look back at past conversations, and are shown local crisis helplines if a message suggests they may be at risk.
 
-Wellness Companion is **not** therapy, medical advice or an emergency service, and the app says so to users.
+Soul Sync is **not** therapy, medical advice or an emergency service, and the app says so to users.
 
 ## Features
 

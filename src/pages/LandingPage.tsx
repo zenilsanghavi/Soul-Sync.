@@ -50,7 +50,7 @@ export const LandingPage: React.FC = () => {
               <Leaf className="h-4 w-4 text-brand-600" aria-hidden="true" />
             </span>
             <div>
-              <p className="text-sm font-semibold text-ink">Wellness Companion</p>
+              <p className="text-sm font-semibold text-ink">Soul Sync</p>
               <p className="text-xs text-ink-subtle">Example conversation</p>
             </div>
           </div>
@@ -117,7 +117,7 @@ export const LandingPage: React.FC = () => {
         <div className="rounded-2xl border border-sage-200 bg-sage-50 p-8 sm:p-10">
           <h2 className="text-2xl font-semibold">Good to know</h2>
           <ul className="mt-5 grid gap-3 text-ink-muted sm:grid-cols-2">
-            <li>Wellness Companion is an AI, not a therapist, doctor or counsellor.</li>
+            <li>Soul Sync is an AI, not a therapist, doctor or counsellor.</li>
             <li>It can't diagnose or treat any condition, and it can make mistakes.</li>
             <li>For ongoing struggles, please talk to a qualified mental health professional.</li>
             <li>In a crisis, contact your local emergency number or a helpline right away.</li>

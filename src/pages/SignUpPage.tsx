@@ -159,7 +159,7 @@ export const SignUpPage: React.FC = () => {
           <span>
             I agree to the <Link to="/terms" className="font-medium text-brand-700 underline">Terms</Link> and{' '}
             <Link to="/privacy" className="font-medium text-brand-700 underline">Privacy Policy</Link>, and understand
-            Wellness Companion is an AI, not a therapist.
+            Soul Sync is an AI, not a therapist.
           </span>
         </label>
 

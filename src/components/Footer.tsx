@@ -69,7 +69,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="mt-12 border-t border-white/10 pt-6 text-sm text-white/70">
-          &copy; {new Date().getFullYear()} Wellness Companion. All rights reserved.
+          &copy; {new Date().getFullYear()} Soul Sync. All rights reserved.
         </div>
       </div>
     </footer>

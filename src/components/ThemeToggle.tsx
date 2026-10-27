@@ -3,7 +3,7 @@ import { Moon, Sun } from 'lucide-react';
 
 type Theme = 'light' | 'dark';
 
-const STORAGE_KEY = 'wc-theme';
+const STORAGE_KEY = 'ss-theme';
 
 const readStoredTheme = (): Theme | null => {
   try {

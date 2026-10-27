@@ -1,4 +1,4 @@
--- Wellness Companion: full database setup for a NEW Supabase project
+-- Soul Sync: full database setup for a NEW Supabase project
 -- Paste all of this into Supabase Dashboard -> SQL Editor -> New query, then click Run.
 
 -- ============================================================
@@ -762,7 +762,7 @@ GRANT ALL ON user_settings TO authenticated;
 -- Migration: 20261022000000_wellness_companion_cleanup.sql
 -- ============================================================
 /*
-  # Wellness Companion cleanup
+  # Soul Sync cleanup
 
   1. Removes features that no longer exist in the app
     - Payments and trials: plan / subscription / billing columns on profiles

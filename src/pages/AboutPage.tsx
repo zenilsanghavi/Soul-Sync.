@@ -22,7 +22,7 @@ export const AboutPage: React.FC = () => (
         <h2 className="text-2xl font-semibold text-ink">Why we built it</h2>
         <p>
           Stress, worry and low moods are part of life, but it isn't always easy to find someone to talk to at the
-          moment you need it. Wellness Companion gives you a place to put your feelings into words and get a kind,
+          moment you need it. Soul Sync gives you a place to put your feelings into words and get a kind,
           thoughtful reply.
         </p>
         <p>

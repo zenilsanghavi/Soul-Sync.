@@ -78,7 +78,7 @@ export const AuthCallbackPage: React.FC = () => {
       <div className="text-center">
         <div className="flex justify-center items-center space-x-2 mb-6">
           <Leaf className="h-12 w-12 text-brand-600 animate-pulse" />
-          <span className="text-2xl font-semibold text-ink">Wellness Companion</span>
+          <span className="text-2xl font-semibold text-ink">Soul Sync</span>
         </div>
         <div className="animate-spin rounded-full h-12 w-12 border-2 border-brand-100 border-t-brand-600 mx-auto mb-4"></div>
         <p className="text-ink-muted">Processing authentication...</p>

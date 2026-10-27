@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-// Design tokens from design-system/wellness-companion/MASTER.md (UI/UX Pro Max):
+// Design tokens from design-system/soul-sync/MASTER.md (UI/UX Pro Max):
 // "Minimalism & Swiss" style, sage neutral + calm teal, Lora headings + Raleway body.
 // Colours are CSS variables (see src/index.css) so the whole palette swaps in dark mode.
 

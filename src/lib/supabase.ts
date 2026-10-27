@@ -19,7 +19,7 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
   },
   global: {
     headers: {
-      'x-my-custom-header': 'wellness-companion'
+      'x-my-custom-header': 'soul-sync'
     }
   }
 });

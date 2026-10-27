@@ -64,7 +64,7 @@ export const ServicesPage: React.FC = () => (
       <div className="page-container max-w-3xl text-center">
         <h2 className="text-2xl font-semibold sm:text-3xl">What it isn't</h2>
         <p className="mt-4 text-lg leading-relaxed text-ink-muted">
-          Wellness Companion is not therapy, medical advice or an emergency service. It can't diagnose or treat
+          Soul Sync is not therapy, medical advice or an emergency service. It can't diagnose or treat
           anything. For ongoing or serious struggles, please reach out to a qualified mental health professional,
           and in an emergency contact your local emergency number.
         </p>

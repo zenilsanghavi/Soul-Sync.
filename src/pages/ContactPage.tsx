@@ -8,7 +8,7 @@ import { FormAlert } from '../components/AuthLayout';
 
 const faqs = [
   {
-    q: 'Is Wellness Companion a therapist?',
+    q: 'Is Soul Sync a therapist?',
     a: 'No. It\'s an AI chat companion for everyday wellbeing. It can\'t diagnose or treat any condition. For ongoing or serious struggles, please talk to a qualified mental health professional.',
   },
   { q: 'Is it free?', a: 'Yes. There are no paid plans.' },
@@ -63,7 +63,7 @@ export const ContactPage: React.FC = () => {
       <PageHero
         eyebrow="Contact"
         title="We'd love to hear from you"
-        description="Questions, feedback or ideas about Wellness Companion? Send us a message."
+        description="Questions, feedback or ideas about Soul Sync? Send us a message."
       />
 
       <section className="page-container grid gap-8 pb-20 lg:grid-cols-[1.4fr_1fr]">

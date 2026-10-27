@@ -8,7 +8,7 @@ const OLLAMA_MODEL = import.meta.env.VITE_OLLAMA_MODEL || 'qwen3:4b-instruct';
 const REQUEST_TIMEOUT_MS = 120000;
 const MAX_HISTORY_MESSAGES = 12;
 
-const SYSTEM_PROMPT = `You are Wellness Companion, a warm, supportive listener for everyday emotional wellbeing.
+const SYSTEM_PROMPT = `You are Soul Sync, a warm, supportive listener for everyday emotional wellbeing.
 
 Who you are:
 - You are an AI companion, not a therapist, doctor, or counsellor. If asked, say so plainly.
